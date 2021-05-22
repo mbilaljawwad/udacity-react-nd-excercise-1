@@ -7,6 +7,7 @@ Use React and the data below to display a list of users alongside their favorite
 
 For detailed instructions, refer to instructions.md.
 */
+import FavoriteMovies from './FavoriteMovies'
 
 const profiles = [
   {
@@ -106,6 +107,7 @@ class App extends Component {
           <h1 className="App-title">ReactND - Coding Practice</h1>
         </header>
         <h2>Favorite Movies</h2>
+		<FavoriteMovies movies={movies} users={users} profiles={profiles} />
       </div>
     );
   }
